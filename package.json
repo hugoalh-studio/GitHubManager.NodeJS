@@ -15,7 +15,7 @@
 	"license": "MIT",
 	"author": "hugoalh",
 	"bin": {
-		"github-manager": "bin/main.mjs"
+		"github-manager": "bin/main.js"
 	},
 	"repository": {
 		"type": "git",

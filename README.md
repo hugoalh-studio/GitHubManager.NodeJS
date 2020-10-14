@@ -90,20 +90,20 @@ NodeJS (>= v10) & NPM (>= v6):
 
 ### CLI (Excerpt)
 
-- `ghm account limit`
-- `ghm account signin {token}`
-- `ghm account signout`
-- `ghm account who`
-- `ghm label add {repository/_local} {name} {color} {description}`
-- `ghm label delete {repository/_local} {name}`
-- `ghm label deleteall {repository/_local}`
-- `ghm label list {repository/_local}`
-- `ghm label merge {source::repository/_local} ...{target::repository/_local}`
-- `ghm label replace {source::repository/_local} ...{target::repository/_local}`
-- `ghm label reset ...{repository/_local}`
-- `ghm secret add {repository} {name} {value}`
-- `ghm secret delete {repository} {name}`
-- `ghm secret deleteall {repository}`
-- `ghm secret list {repository}`
-- `ghm secret merge {source::repository} ...{target::repository}`
-- `ghm secret replace {source::repository} ...{target::repository}`
+- `github-manager account limit`
+- `github-manager account signin {token}`
+- `github-manager account signout`
+- `github-manager account who`
+- `github-manager label add {repository/_local} {name} {color} {description}`
+- `github-manager label delete {repository/_local} {name}`
+- `github-manager label deleteall {repository/_local}`
+- `github-manager label list {repository/_local}`
+- `github-manager label merge {source::repository/_local} ...{target::repository/_local}`
+- `github-manager label replace {source::repository/_local} ...{target::repository/_local}`
+- `github-manager label reset ...{repository/_local}`
+- `github-manager secret add {repository} {name} {value}`
+- `github-manager secret delete {repository} {name}`
+- `github-manager secret deleteall {repository}`
+- `github-manager secret list {repository}`
+- `github-manager secret merge {source::repository} ...{target::repository}`
+- `github-manager secret replace {source::repository} ...{target::repository}`

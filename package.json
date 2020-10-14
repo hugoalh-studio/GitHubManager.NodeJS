@@ -1,0 +1,35 @@
+{
+	"name": "@hugoalh/github-manager",
+	"version": "0.0.1",
+	"description": "A CLI to provide a better way to manage GitHub.",
+	"keywords": [
+		"nodejs",
+		"github",
+		"manage",
+		"manager"
+	],
+	"homepage": "https://github.com/hugoalh-studio/NodeJS.GitHubManager#readme",
+	"bugs": {
+		"url": "https://github.com/hugoalh-studio/NodeJS.GitHubManager/issues"
+	},
+	"license": "MIT",
+	"author": "hugoalh",
+	"bin": {
+		"github-manager": "bin/main.mjs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugoalh-studio/NodeJS.GitHubManager.git"
+	},
+	"dependencies": {
+		"@hugoalh/advanced-determine": "^3.4.0",
+		"@octokit/rest": "^18.0.6",
+		"chalk": "^4.1.0",
+		"cliui": "^7.0.1"
+	},
+	"engines": {
+		"node": ">= 10.0.0",
+		"npm": ">= 6.0.0"
+	},
+	"private": false
+}

@@ -93,14 +93,14 @@ NodeJS (>= v10) & NPM (>= v6):
 - `github-manager account limit`
 - `github-manager account signin {token}`
 - `github-manager account signout`
-- `github-manager account who`
-- `github-manager label add {repository/_local} {name} {color} {description}`
-- `github-manager label delete {repository/_local} {name}`
-- `github-manager label deleteall {repository/_local}`
-- `github-manager label list {repository/_local}`
-- `github-manager label merge {source::repository/_local} ...{target::repository/_local}`
-- `github-manager label replace {source::repository/_local} ...{target::repository/_local}`
-- `github-manager label reset ...{repository/_local}`
+- `github-manager account whoami`
+- `github-manager label add {repository/localstorage} {name} {color} [description]`
+- `github-manager label delete {repository/localstorage} {name}`
+- `github-manager label deleteall {repository/localstorage}`
+- `github-manager label list {repository/localstorage}`
+- `github-manager label merge {source::repository/localstorage} ...{target::repository/localstorage}`
+- `github-manager label replace {source::repository/localstorage} ...{target::repository/localstorage}`
+- `github-manager label reset ...{repository/localstorage}`
 - `github-manager secret add {repository} {name} {value}`
 - `github-manager secret delete {repository} {name}`
 - `github-manager secret deleteall {repository}`

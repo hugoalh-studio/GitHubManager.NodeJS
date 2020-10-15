@@ -84,6 +84,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 NodeJS (>= v10) & NPM (>= v6):
 
 ```powershell
+# Use either one
 > npm install -g @hugoalh/github-manager
 > npm install --global @hugoalh/github-manager
 ```
@@ -95,15 +96,15 @@ NodeJS (>= v10) & NPM (>= v6):
 - `github-manager account signout`
 - `github-manager account whoami`
 - `github-manager label add {repository/localstorage} {name} {color} [description]`
-- `github-manager label delete {repository/localstorage} {name}`
-- `github-manager label deleteall {repository/localstorage}`
+- `github-manager label delete {repository/localstorage} ...{name}`
+- `github-manager label deleteall ...{repository/localstorage}`
 - `github-manager label list {repository/localstorage}`
 - `github-manager label merge {source::repository/localstorage} ...{target::repository/localstorage}`
 - `github-manager label replace {source::repository/localstorage} ...{target::repository/localstorage}`
 - `github-manager label reset ...{repository/localstorage}`
 - `github-manager secret add {repository} {name} {value}`
-- `github-manager secret delete {repository} {name}`
-- `github-manager secret deleteall {repository}`
+- `github-manager secret delete {repository} ...{name}`
+- `github-manager secret deleteall ...{repository}`
 - `github-manager secret list {repository}`
 - `github-manager secret merge {source::repository} ...{target::repository}`
 - `github-manager secret replace {source::repository} ...{target::repository}`

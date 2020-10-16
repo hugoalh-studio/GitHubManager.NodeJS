@@ -74,12 +74,12 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | **Label:** Merge |  | ✔ |  | ✔ |  |
 | **Label:** Replace |  | ✔ |  | ✔ |  |
 | **Label:** Reset | ✔ |  | ✔ |  |  |
-| **Secret:** Add | ✔ |  |  |  | ✔ |
-| **Secret:** Delete | ✔ |  |  |  | ✔ |
-| **Secret:** Delete All | ✔ |  |  |  | ✔ |
-| **Secret:** List | ✔ |  |  |  | ✔ |
-| **Secret:** Merge |  | ✔ |  |  |  |
-| **Secret:** Replace |  | ✔ |  |  |  |
+| **Secret:** Add | ✔ |  | ✔ |  | ✔ |
+| **Secret:** Delete | ✔ |  | ✔ |  | ✔ |
+| **Secret:** Delete All | ✔ |  | ✔ |  | ✔ |
+| **Secret:** List | ✔ |  | ✔ |  | ✔ |
+| **Secret:** Merge |  | ✔ |  | ✔ |  |
+| **Secret:** Replace |  | ✔ |  | ✔ |  |
 
 *\* Secret is not yet implemented*
 

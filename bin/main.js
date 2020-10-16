@@ -16,7 +16,10 @@ switch (method.toLowerCase()) {
 		require("../lib/label.js")(remain);
 		break;
 	case "secret":
+		console.warn(`${chalk.bgMagenta.white.bold("W.I.P.")} Secret is not yet implemented!`);
+		/*
 		require("../lib/secret.js")(remain);
+		*/
 		break;
 	default:
 		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command!`);

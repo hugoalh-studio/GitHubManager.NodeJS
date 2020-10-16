@@ -77,7 +77,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | **Secret:** Add | ✔ |  | ✔ |  | ✔ |
 | **Secret:** Delete | ✔ |  | ✔ |  | ✔ |
 | **Secret:** Delete All | ✔ |  | ✔ |  | ✔ |
-| **Secret:** List | ✔ |  | ✔ |  | ✔ |
+| **Secret:** List (Mask / Unmask) | ✔ |  | ✔ |  | ✔ |
 | **Secret:** Merge |  | ✔ |  | ✔ |  |
 | **Secret:** Replace |  | ✔ |  | ✔ |  |
 
@@ -113,6 +113,7 @@ NodeJS (>= v10) & NPM (>= v6):
 - `github-manager secret add {repository} {name} {value}`
 - `github-manager secret delete {repository} ...{name}`
 - `github-manager secret deleteall ...{repository}`
-- `github-manager secret list {repository}`
+- `github-manager secret listmask {repository}`
+- `github-manager secret listunmask {repository}`
 - `github-manager secret merge {source::repository} ...{target::repository}`
 - `github-manager secret replace {source::repository} ...{target::repository}`

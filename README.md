@@ -61,19 +61,27 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### 🌟 Feature
 
-- Label
-  - Add (repository / local storage)
-  - Delete (repository / local storage)
-  - Delete all (repository / local storage)
-  - Merge (between repositories / between repository and local storage)
-  - Replace (between repositories / between repository and local storage)
-  - Reset (repository / local storage)
-- Secret
-  - Add (repository)
-  - Delete (repository)
-  - Delete all (repository)
-  - Merge (between repositories)
-  - Replace (between repositories)
+> - **REP:** Repository
+> - **LS:** Local Storage
+> - **ORG:** Organization
+
+| **Method** | **REP** | **REP <-> REP** | **LS** | **REP <-> LS** | **ORG** |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **Label:** Add | ✔ |  | ✔ |  |  |
+| **Label:** Delete | ✔ |  | ✔ |  |  |
+| **Label:** Delete All |  ✔|  | ✔ |  |  |
+| **Label:** List | ✔ |  | ✔ |  |  |
+| **Label:** Merge |  | ✔ |  | ✔ |  |
+| **Label:** Replace |  | ✔ |  | ✔ |  |
+| **Label:** Reset | ✔ |  | ✔ |  |  |
+| **Secret:** Add | ✔ |  |  |  | ✔ |
+| **Secret:** Delete | ✔ |  |  |  | ✔ |
+| **Secret:** Delete All | ✔ |  |  |  | ✔ |
+| **Secret:** List | ✔ |  |  |  | ✔ |
+| **Secret:** Merge |  | ✔ |  |  |  |
+| **Secret:** Replace |  | ✔ |  |  |  |
+
+*\* Secret is not yet implemented*
 
 ## 📄 Documentation
 

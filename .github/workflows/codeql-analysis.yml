@@ -1,7 +1,12 @@
 name: "CodeQL Analysis"
 on:
-  - "push"
-  - "pull_request"
+  push:
+  pull_request:
+    types:
+      - "opened"
+      - "edited"
+      - "reopened"
+      - "synchronize"
 jobs:
   get-language-list:
     name: "Get Language List"

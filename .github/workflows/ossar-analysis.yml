@@ -1,7 +1,12 @@
 name: "OSSAR (Open Source Static Analysis Runner) Analysis"
 on:
-  - "push"
-  - "pull_request"
+  push:
+  pull_request:
+    types:
+      - "opened"
+      - "edited"
+      - "reopened"
+      - "synchronize"
 jobs:
   analysis:
     name: "Analysis"

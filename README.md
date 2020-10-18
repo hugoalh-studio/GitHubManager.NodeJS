@@ -61,27 +61,24 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### 🌟 Feature
 
-> - **RP:** Repository
-> - **LS:** Local Storage
-> - **ORG:** Organization
+| **Label** | **Repository** | **Repository <-> Repository** | **Local Storage** | **Repository <-> Local Storage** |
+|:---:|:---:|:---:|:---:|:---:|
+| Add | ✔ |  | ✔ |  |
+| Delete | ✔ |  | ✔ |  |
+| Delete All |  ✔|  | ✔ |  |
+| List | ✔ |  | ✔ |  |
+| Merge |  | ✔ |  | ✔ |
+| Replace |  | ✔ |  | ✔ |
+| Reset | ✔ |  | ✔ |  |
 
-| **Method** | **RP** | **RP <-> RP** | **LS** | **RP <-> LS** | **ORG** | **RP <-> ORG** |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Label:** Add | ✔ |  | ✔ |  |  |  |
-| **Label:** Delete | ✔ |  | ✔ |  |  |  |
-| **Label:** Delete All |  ✔|  | ✔ |  |  |  |
-| **Label:** List | ✔ |  | ✔ |  |  |  |
-| **Label:** Merge |  | ✔ |  | ✔ |  |  |
-| **Label:** Replace |  | ✔ |  | ✔ |  |  |
-| **Label:** Reset | ✔ |  | ✔ |  |  |  |
-| \* **Secret:** Add | ✔ |  |  |  | ✔ |  |
-| \* **Secret:** Delete | ✔ |  |  |  | ✔ |  |
-| \* **Secret:** Delete All | ✔ |  |  |  | ✔ |  |
-| \* **Secret:** List (Mask / Unmask) | ✔ |  |  |  | ✔ |  |
-| \* **Secret:** Merge |  | ✔ |  |  |  | ✔ |
-| \* **Secret:** Replace |  | ✔ |  |  |  | ✔ |
-
-\* Secret is not yet implemented.
+| **Secret** | **Repository** | **Repository <-> Repository** | **Organization** | **Repository <-> Organization** |
+|:---:|:---:|:---:|:---:|:---:|
+| Add | ✔ |  | ✔ |  |
+| Delete | ✔ |  | ✔ |  |
+| Delete All | ✔ |  | ✔ |  |
+| List (Mask / Unmask) | ✔ |  | ✔ |  |
+| Merge |  | ✔ |  | ✔ |
+| Replace |  | ✔ |  | ✔ |
 
 ## 📄 Documentation
 

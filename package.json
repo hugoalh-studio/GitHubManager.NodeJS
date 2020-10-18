@@ -6,7 +6,9 @@
 		"nodejs",
 		"github",
 		"manage",
-		"manager"
+		"manager",
+		"label",
+		"secret"
 	],
 	"homepage": "https://github.com/hugoalh-studio/NodeJS.GitHubManager#readme",
 	"bugs": {

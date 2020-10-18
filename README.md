@@ -78,8 +78,8 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | \* **Secret:** Delete | ✔ |  |  |  | ✔ |  |
 | \* **Secret:** Delete All | ✔ |  |  |  | ✔ |  |
 | \* **Secret:** List (Mask / Unmask) | ✔ |  |  |  | ✔ |  |
-| \* **Secret:** Merge |  | ✔ |  |  |  | GitHub Setting and only ORG -> RP |
-| \* **Secret:** Replace |  | ✔ |  |  |  | GitHub  Setting and only ORG -> RP|
+| \* **Secret:** Merge |  | ✔ |  |  |  | ✔ |
+| \* **Secret:** Replace |  | ✔ |  |  |  | ✔ |
 
 \* Secret is not yet implemented.
 

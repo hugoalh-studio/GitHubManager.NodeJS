@@ -27,7 +27,8 @@
 		"@hugoalh/advanced-determine": "^3.4.1",
 		"@octokit/rest": "^18.0.6",
 		"chalk": "^4.1.0",
-		"cliui": "^7.0.3"
+		"cliui": "^7.0.3",
+		"tweetsodium": "0.0.5"
 	},
 	"engines": {
 		"node": ">= 10.0.0",

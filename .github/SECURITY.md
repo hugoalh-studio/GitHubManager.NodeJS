@@ -12,7 +12,7 @@
 
 | **Version** | **Targeted NodeJS Version** | **Support** |
 |:---:|:---:|:---:|
-| v0.0.1 | v10.0.0 | ✔ |
+| v0 | v10.0.0 | ✔ |
 
 ## Report Vulnerability
 

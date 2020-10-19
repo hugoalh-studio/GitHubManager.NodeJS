@@ -71,7 +71,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | Replace |  | ✔ |  | ✔ |
 | Reset | ✔ |  | ✔ |  |
 
-| **Secret** | **Repository** | **Repository <-> Repository** | **Organization** | **Repository <-> Organization** |
+| **Secret**\* | **Repository** | **Repository <-> Repository** | **Organization** | **Repository <-> Organization** |
 |:---:|:---:|:---:|:---:|:---:|
 | Add | ✔ |  | ✔ |  |
 | Delete | ✔ |  | ✔ |  |
@@ -79,6 +79,8 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | List (Mask / Unmask) | ✔ |  | ✔ |  |
 | Merge |  | ✔ |  | ✔ |
 | Replace |  | ✔ |  | ✔ |
+
+\* Not yet implemented.
 
 ## 📄 Documentation
 
@@ -96,21 +98,23 @@ NodeJS (>= v10) & NPM (>= v6):
 
 ### CLI (Excerpt)
 
-- `github-manager account limit`
-- `github-manager account signin {token}`
-- `github-manager account signout`
-- `github-manager account whoami`
-- `github-manager label add {repository/localstorage} {name} {color} [description]`
-- `github-manager label delete {repository/localstorage} ...{name}`
-- `github-manager label deleteall ...{repository/localstorage}`
-- `github-manager label list {repository/localstorage}`
-- `github-manager label merge {source::repository/localstorage} ...{target::repository/localstorage}`
-- `github-manager label replace {source::repository/localstorage} ...{target::repository/localstorage}`
-- `github-manager label reset ...{repository/localstorage}`
-- `github-manager secret add {repository/organization} {name} {value}`
-- `github-manager secret delete {repository/organization} ...{name}`
-- `github-manager secret deleteall ...{repository/organization}`
-- `github-manager secret listmask {repository/organization}`
-- `github-manager secret listunmask {repository/organization}`
-- `github-manager secret merge {source::repository/organization} ...{target::repository/organization}`
-- `github-manager secret replace {source::repository/organization} ...{target::repository/organization}`
+- `account limit`
+- `account signin {token}`
+- `account signout`
+- `account whoami`
+- `label add {repository/localstorage} {name} {color} [description]`
+- `label delete {repository/localstorage} ...{name}`
+- `label deleteall ...{repository/localstorage}`
+- `label list {repository/localstorage}`
+- `label merge {source::repository/localstorage} ...{target::repository/localstorage}`
+- `label replace {source::repository/localstorage} ...{target::repository/localstorage}`
+- `label reset ...{repository/localstorage}`
+- `secret add {repository/organization} {name} {value}`\*
+- `secret delete {repository/organization} ...{name}`\*
+- `secret deleteall ...{repository/organization}`\*
+- `secret listmask {repository/organization}`\*
+- `secret listunmask {repository/organization}`\*
+- `secret merge {source::repository/organization} ...{target::repository/organization}`\*
+- `secret replace {source::repository/organization} ...{target::repository/organization}`\*
+
+\* Not yet implemented.

@@ -10,7 +10,8 @@ let method = input[0] || "help",
 	remain = input.slice(1);
 switch (method.toLowerCase()) {
 	case "account":
-		require("../lib/account.js")(remain);
+	case "acc":
+			require("../lib/account.js")(remain);
 		break;
 	case "label":
 		require("../lib/label.js")(remain);

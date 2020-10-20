@@ -11,7 +11,7 @@ let method = input[0] || "help",
 switch (method.toLowerCase()) {
 	case "account":
 	case "acc":
-			require("../lib/account.js")(remain);
+		require("../lib/account.js")(remain);
 		break;
 	case "label":
 		require("../lib/label.js")(remain);

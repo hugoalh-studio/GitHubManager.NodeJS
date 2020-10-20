@@ -67,7 +67,8 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | Delete | ✔ |  | ✔ |  |
 | Delete All |  ✔|  | ✔ |  |
 | List | ✔ |  | ✔ |  |
-| Merge |  | ✔ |  | ✔ |
+| Pull Merge |  | ✔ |  | ✔ |
+| Push Merge |  | ✔ |  | ✔ |
 | Replace |  | ✔ |  | ✔ |
 | Reset | ✔ |  | ✔ |  |
 
@@ -106,7 +107,8 @@ NodeJS (>= v10) & NPM (>= v6):
 - `label delete {repository/localstorage} ...{name}`
 - `label deleteall ...{repository/localstorage}`
 - `label list {repository/localstorage}`
-- `label merge {source::repository/localstorage} ...{target::repository/localstorage}`
+- `label pullmerge {target::repository/localstorage} ...{source::repository/localstorage}`
+- `label pushmerge {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label replace {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label reset ...{repository/localstorage}`
 - `secret add {repository/organization} {name} {value}`\*

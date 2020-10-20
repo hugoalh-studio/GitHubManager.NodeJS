@@ -17,7 +17,7 @@ switch (method.toLowerCase()) {
 		require("../lib/label.js")(remain);
 		break;
 	case "secret":
-		console.error(`${chalk.bgMagenta.white.bold("W.I.P")} Secret is not yet implemented! ([NodeJS] GitHub Manager)`);
+		console.error(`${chalk.bgMagenta.white.bold("W.I.P.")} Secret is not yet implemented! ([NodeJS] GitHub Manager)`);
 		/*
 		require("../lib/secret.js")(remain);
 		*/

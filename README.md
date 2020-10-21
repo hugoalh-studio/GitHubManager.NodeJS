@@ -61,25 +61,24 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### 🌟 Feature
 
-| **Label** | **Repository** | **Repository <-> Repository** | **Local Storage** | **Repository <-> Local Storage** |
-|:---:|:---:|:---:|:---:|:---:|
-| Add | ✔ |  | ✔ |  |
-| Delete | ✔ |  | ✔ |  |
-| Delete All |  ✔|  | ✔ |  |
-| List | ✔ |  | ✔ |  |
-| Pull Merge |  | ✔ |  | ✔ |
-| Push Merge |  | ✔ |  | ✔ |
-| Replace |  | ✔ |  | ✔ |
-| Reset | ✔ |  | ✔ |  |
-
-| **Secret**\* | **Repository** | **Repository <-> Repository** | **Organization** | **Repository <-> Organization** |
-|:---:|:---:|:---:|:---:|:---:|
-| Add | ✔ |  | ✔ |  |
-| Delete | ✔ |  | ✔ |  |
-| Delete All | ✔ |  | ✔ |  |
-| List (Mask / Unmask) | ✔ |  | ✔ |  |
-| Merge |  | ✔ |  | ✔ |
-| Replace |  | ✔ |  | ✔ |
+|  | **Repository** | **Local Storage** | **Organization** |
+|:----|:---:|:---:|:---:|
+| **Label:** Add | ✔ | ✔ |  |
+| **Label:** Delete | ✔ | ✔ |  |
+| **Label:** Delete All | ✔ | ✔ |  |
+| **Label:** List | ✔ | ✔ |  |
+| **Label:** Pull Merge | ✔ | ✔ |  |
+| **Label:** Push Merge | ✔ | ✔ |  |
+| **Label:** Replace | ✔ | ✔ |  |
+| **Label:** Reset | ✔ | ✔ |  |
+| \***Secret:** Add | ✔ | ✔ | ✔ |
+| \***Secret:** Delete | ✔ | ✔ | ✔ |
+| \***Secret:** Delete All | ✔ | ✔ | ✔ |
+| \***Secret:** List Mask | ✔ | ✔ | ✔ |
+| \***Secret:** List Unmask | ✔ | ✔ | ✔ |
+| \***Secret:** Pull Merge | ✔ | ✔ | ✔ |
+| \***Secret:** Push Merge | ✔ | ✔ | ✔ |
+| \***Secret:** Replace | ✔ | ✔ | ✔ |
 
 \* Not yet implemented.
 
@@ -111,12 +110,13 @@ NodeJS (>= v10) & NPM (>= v6):
 - `label pushmerge {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label replace {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label reset ...{repository/localstorage}`
-- `secret add {repository/organization} {name} {value}`\*
-- `secret delete {repository/organization} ...{name}`\*
-- `secret deleteall ...{repository/organization}`\*
-- `secret listmask {repository/organization}`\*
-- `secret listunmask {repository/organization}`\*
-- `secret merge {source::repository/organization} ...{target::repository/organization}`\*
-- `secret replace {source::repository/organization} ...{target::repository/organization}`\*
+- `secret add {repository/localstorage/organization} {name} {value}`\*
+- `secret delete {repository/localstorage/organization} ...{name}`\*
+- `secret deleteall ...{repository/localstorage/organization}`\*
+- `secret listmask {repository/localstorage/organization}`\*
+- `secret listunmask {repository/localstorage/organization}`\*
+- `secret pullmerge {target::repository/localstorage/organization} ...{source::repository/localstorage/organization}`\*
+- `secret pushmerge {source::repository/localstorage/organization} ...{target::repository/localstorage/organization}`\*
+- `secret replace {source::repository/localstorage/organization} ...{target::repository/localstorage/organization}`\*
 
 \* Not yet implemented.

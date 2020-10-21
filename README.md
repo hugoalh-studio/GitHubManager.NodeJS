@@ -74,11 +74,10 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | \***Secret:** Add | ✔ | ✔ | ✔ |
 | \***Secret:** Delete | ✔ | ✔ | ✔ |
 | \***Secret:** Delete All | ✔ | ✔ | ✔ |
-| \***Secret:** List Mask | ✔ | ✔ | ✔ |
-| \***Secret:** List Unmask | ✔ | ✔ | ✔ |
-| \***Secret:** Pull Merge | ✔ | ✔ | ✔ |
-| \***Secret:** Push Merge | ✔ | ✔ | ✔ |
-| \***Secret:** Replace | ✔ | ✔ | ✔ |
+| \***Secret:** List |  | ✔ |  |
+| \***Secret:** Pull Merge |  |  |  |
+| \***Secret:** Push Merge | Import only | Export only | Import only |
+| \***Secret:** Replace | Import only | Export only | Import only |
 
 \* Not yet implemented.
 
@@ -113,10 +112,8 @@ NodeJS (>= v10) & NPM (>= v6):
 - `secret add {repository/localstorage/organization} {name} {value}`\*
 - `secret delete {repository/localstorage/organization} ...{name}`\*
 - `secret deleteall ...{repository/localstorage/organization}`\*
-- `secret listmask {repository/localstorage/organization}`\*
-- `secret listunmask {repository/localstorage/organization}`\*
-- `secret pullmerge {target::repository/localstorage/organization} ...{source::repository/localstorage/organization}`\*
-- `secret pushmerge {source::repository/localstorage/organization} ...{target::repository/localstorage/organization}`\*
-- `secret replace {source::repository/localstorage/organization} ...{target::repository/localstorage/organization}`\*
+- `secret list`\*
+- `secret pushmerge ...{repository/organization}`\*
+- `secret replace ...{repository/organization}`\*
 
 \* Not yet implemented.

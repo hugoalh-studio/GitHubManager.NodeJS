@@ -71,13 +71,13 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | **Label:** Push Merge | ✔ | ✔ |  |
 | **Label:** Replace | ✔ | ✔ |  |
 | **Label:** Reset | ✔ | ✔ |  |
-| \***Secret:** Add | ✔ | ✔ | ✔ |
-| \***Secret:** Delete | ✔ | ✔ | ✔ |
-| \***Secret:** Delete All | ✔ | ✔ | ✔ |
-| \***Secret:** List | Key only | ✔ | Key only |
-| \***Secret:** Pull Merge |  |  |  |
-| \***Secret:** Push Merge | Import only | Export only | Import only |
-| \***Secret:** Replace | Import only | Export only | Import only |
+| **Secret:** Add | ✔ | ✔ | ✔ |
+| **Secret:** Delete | ✔ | ✔ | ✔ |
+| **Secret:** Delete All | ✔ | ✔ | ✔ |
+| **Secret:** List | Key only | ✔ | Key only |
+| **Secret:** Pull Merge |  |  |  |
+| **Secret:** Push Merge | Import only | Export only | Import only |
+| **Secret:** Replace\* | Import only | Export only | Import only |
 
 \* Not yet implemented.
 
@@ -109,11 +109,11 @@ NodeJS (>= v10) & NPM (>= v6):
 - `label pushmerge {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label replace {source::repository/localstorage} ...{target::repository/localstorage}`
 - `label reset ...{repository/localstorage}`
-- `secret add {repository/localstorage/organization} {name} {value}`\*
-- `secret delete {repository/localstorage/organization} ...{name}`\*
-- `secret deleteall ...{repository/localstorage/organization}`\*
-- `secret list {repository/localstorage/organization}`\*
-- `secret pushmerge ...{repository/organization}`\*
+- `secret add {repository/localstorage/organization} {name} {value}`
+- `secret delete {repository/localstorage/organization} ...{name}`
+- `secret deleteall ...{repository/localstorage/organization}`
+- `secret list {repository/localstorage/organization}`
+- `secret pushmerge ...{repository/organization}`
 - `secret replace ...{repository/organization}`\*
 
 \* Not yet implemented.

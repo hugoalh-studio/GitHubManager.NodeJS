@@ -13,6 +13,10 @@ switch (method.toLowerCase()) {
 	case "acc":
 		require("../lib/account.js")(remain);
 		break;
+	case "help":
+	case "h":
+		require("../lib/help.js")();
+		break;
 	case "label":
 		require("../lib/label.js")(remain);
 		break;
@@ -20,9 +24,6 @@ switch (method.toLowerCase()) {
 		require("../lib/secret.js")(remain);
 		break;
 	default:
-		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! ([NodeJS] GitHub Manager)`);
-	case "help":
-	case "h":
-		require("../lib/help.js")();
+		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! Use \`help\` to view the command list. ([NodeJS] GitHub Manager)`);
 		break;
 };

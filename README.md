@@ -98,8 +98,10 @@ NodeJS (>= v10) & NPM (>= v6):
 ### CLI (Excerpt)
 
 - `account limit`
+- `account lock {password}`
 - `account signin {token}`
 - `account signout`
+- `account unlock {password}`
 - `account whoami`
 - `label add {repository/localstorage} {name} {color} [description]`
 - `label delete {repository/localstorage} ...{name}`

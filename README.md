@@ -74,7 +74,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | \***Secret:** Add | ✔ | ✔ | ✔ |
 | \***Secret:** Delete | ✔ | ✔ | ✔ |
 | \***Secret:** Delete All | ✔ | ✔ | ✔ |
-| \***Secret:** List |  | ✔ |  |
+| \***Secret:** List | Key only | ✔ | Key only |
 | \***Secret:** Pull Merge |  |  |  |
 | \***Secret:** Push Merge | Import only | Export only | Import only |
 | \***Secret:** Replace | Import only | Export only | Import only |
@@ -112,7 +112,7 @@ NodeJS (>= v10) & NPM (>= v6):
 - `secret add {repository/localstorage/organization} {name} {value}`\*
 - `secret delete {repository/localstorage/organization} ...{name}`\*
 - `secret deleteall ...{repository/localstorage/organization}`\*
-- `secret list`\*
+- `secret list {repository/localstorage/organization}`\*
 - `secret pushmerge ...{repository/organization}`\*
 - `secret replace ...{repository/organization}`\*
 

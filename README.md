@@ -66,6 +66,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | **Label:** Add | ✔ | ✔ |  |
 | **Label:** Delete | ✔ | ✔ |  |
 | **Label:** Delete All | ✔ | ✔ |  |
+| **Label:** Delete Cross | ✔ | ✔ |  |
 | **Label:** List | ✔ | ✔ |  |
 | **Label:** Pull Merge | ✔ | ✔ |  |
 | **Label:** Push Merge | ✔ | ✔ |  |
@@ -74,6 +75,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | **Secret:** Add | ✔ | ✔ | ✔ |
 | **Secret:** Delete | ✔ | ✔ | ✔ |
 | **Secret:** Delete All | ✔ | ✔ | ✔ |
+| **Secret:** Delete Cross | ✔ | ✔ | ✔ |
 | **Secret:** List | Key only | ✔ | Key only |
 | **Secret:** Pull Merge |  |  |  |
 | **Secret:** Push Merge | Import only | Export only | Import only |
@@ -127,6 +129,7 @@ NodeJS (>= v10) & NPM (>= v6):
 - `label add {repository/localstorage} {name} {color} [description]`
 - `label delete {repository/localstorage} ...{name}`
 - `label deleteall ...{repository/localstorage}`
+- `label deletecross {name} ...{repository/localstorage}`
 - `label list {repository/localstorage}`
 - `label pullmerge {target::repository/localstorage} ...{source::repository/localstorage}`
 - `label pushmerge {source::repository/localstorage} ...{target::repository/localstorage}`
@@ -135,6 +138,7 @@ NodeJS (>= v10) & NPM (>= v6):
 - `secret add {repository/localstorage/organization} {name} {value}`
 - `secret delete {repository/localstorage/organization} ...{name}`
 - `secret deleteall ...{repository/localstorage/organization}`
+- `secret deletecross {name} ...{repository/localstorage/organization}`
 - `secret list {repository/localstorage/organization}`
 - `secret pushmerge ...{repository/organization}`
 - `secret replace ...{repository/organization}`

@@ -6,22 +6,22 @@
 ==================*/
 const chalk = require("chalk");
 let input = process.argv.slice(2);
-let method = input[0] || "help",
-	remain = input.slice(1);
-switch (method.toLowerCase()) {
+let submodule = input[0] || "help",
+	data = input.slice(1);
+switch (submodule.toLowerCase()) {
 	case "account":
 	case "acc":
-		require("../lib/account.js")(remain);
+		require("../lib/account.js")(data);
 		break;
 	case "help":
 	case "h":
 		require("../lib/help.js")();
 		break;
 	case "label":
-		require("../lib/label.js")(remain);
+		require("../lib/label.js")(data);
 		break;
 	case "secret":
-		require("../lib/secret.js")(remain);
+		require("../lib/secret.js")(data);
 		break;
 	default:
 		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! Use \`help\` to view the command list. ([NodeJS] GitHub Manager)`);

@@ -87,21 +87,21 @@ A NodeJS CLI to provide a better way to manage GitHub.
 - When using `account lock {password}` or `account unlock {password}` in PowerShell, please make sure to clear Powershell command history, otherwise this maybe exploit by malware.
   - Get the PowerShell command history file location:
     ```powershell
-    (Get-PSReadlineOption).HistorySavePath
+    > (Get-PSReadlineOption).HistorySavePath
     ```
   - Show the content of the PowerShell command history file:
     ```powershell
-    cat (Get-PSReadlineOption).HistorySavePath
+    > cat (Get-PSReadlineOption).HistorySavePath
     ```
   - Clear the command history in PowerShell by delete the file:
     ```powershell
-    Remove-Item (Get-PSReadlineOption).HistorySavePath
+    > Remove-Item (Get-PSReadlineOption).HistorySavePath
     ```
   - Change how the PowerShell command history is saved:
     ```powershell
-    Set-PSReadlineOption -HistorySaveStyle SaveIncrementally # Default
-    Set-PSReadlineOption -HistorySaveStyle SaveAtExit
-    Set-PSReadlineOption -HistorySaveStyle SaveNothing
+    > Set-PSReadlineOption -HistorySaveStyle SaveIncrementally # Default
+    > Set-PSReadlineOption -HistorySaveStyle SaveAtExit
+    > Set-PSReadlineOption -HistorySaveStyle SaveNothing
     ```
 
 ## 📄 Documentation
@@ -110,7 +110,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### Getting Started (Excerpt)
 
-NodeJS (>= v10) & NPM (>= v6):
+NodeJS (>= v10.13) & NPM (>= v6.4.1):
 
 ```powershell
 # Use either one
@@ -126,19 +126,23 @@ NodeJS (>= v10) & NPM (>= v6):
 - `account signout`
 - `account unlock {password}`
 - `account whoami`
-- `label add {repository/localstorage} {name} {color} [description]`
-- `label delete {repository/localstorage} ...{name}`
-- `label deleteall ...{repository/localstorage}`
-- `label deletecross {name} ...{repository/localstorage}`
-- `label list {repository/localstorage}`
-- `label pullmerge {target::repository/localstorage} ...{source::repository/localstorage}`
-- `label pushmerge {source::repository/localstorage} ...{target::repository/localstorage}`
-- `label replace {source::repository/localstorage} ...{target::repository/localstorage}`
-- `label reset ...{repository/localstorage}`
-- `secret add {repository/localstorage/organization} {name} {value}`
-- `secret delete {repository/localstorage/organization} ...{name}`
-- `secret deleteall ...{repository/localstorage/organization}`
-- `secret deletecross {name} ...{repository/localstorage/organization}`
-- `secret list {repository/localstorage/organization}`
-- `secret pushmerge ...{repository/organization}`
-- `secret replace ...{repository/organization}`
+- `label add {target} {name} {color} [description]`
+- `label delete {target} ...{name}`
+- `label deleteall ...{target}`
+- `label deletecross {name} ...{target}`
+- `label list {target}`
+- `label pullmerge {target} ...{source}`
+- `label pushmerge {source} ...{target}`
+- `label replace {source} ...{target}`
+- `label reset ...{target}`
+- `localstorage lock {password}`
+- `localstorage unlock {password}`
+- `secret add {target} {name} {value}`
+- `secret delete {target} ...{name}`
+- `secret deleteall ...{target}`
+- `secret deletecross {name} ...{target}`
+- `secret list {target}`
+- `secret lock {password}`
+- `secret pushmerge ...{target}`
+- `secret replace ...{target}`
+- `secret unlock {password}`

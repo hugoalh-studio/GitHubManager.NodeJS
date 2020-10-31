@@ -2,7 +2,7 @@
 /*==================
 [NodeJS] GitHub Manager
 	Language:
-		NodeJS/10.0.0
+		NodeJS/10.13.0
 ==================*/
 const chalk = require("chalk");
 let input = process.argv.slice(2);
@@ -19,6 +19,12 @@ switch (submodule.toLowerCase()) {
 		break;
 	case "label":
 		require("../lib/label.js")(data);
+		break;
+	case "localstorage":
+	case "local":
+	case "ls":
+	case "storage":
+		require("../lib/localstorage/service.js")(data);
 		break;
 	case "secret":
 		require("../lib/secret.js")(data);

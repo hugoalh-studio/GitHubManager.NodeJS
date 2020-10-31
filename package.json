@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/github-manager",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A CLI to provide a better way to manage GitHub.",
 	"keywords": [
 		"nodejs",
@@ -24,15 +24,15 @@
 		"url": "git+https://github.com/hugoalh-studio/NodeJS.GitHubManager.git"
 	},
 	"dependencies": {
-		"@hugoalh/advanced-determine": "^3.4.1",
+		"@hugoalh/advanced-determine": "^4.0.0",
 		"@octokit/rest": "^18.0.6",
 		"chalk": "^4.1.0",
 		"cliui": "^7.0.3",
-		"tweetsodium": "0.0.5"
+		"tweetsodium": "^0.0.5"
 	},
 	"engines": {
-		"node": ">= 10.0.0",
-		"npm": ">= 6.0.0"
+		"node": ">= 10.13.0",
+		"npm": ">= 6.4.1"
 	},
 	"private": false
 }

@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/github-manager",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "A CLI to provide a better way to manage GitHub.",
 	"keywords": [
 		"nodejs",

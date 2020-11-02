@@ -83,25 +83,8 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### ⚠ Important
 
-- `account lock {password}`, `account unlock {password}`, `localstorage lock {password}`, `localstorage unlock {password}`, `secret lock {password}`, and `secret unlock {password}` are support multiple locks, please reverse locks order when unlock. Also, when using in PowerShell, please make sure to clear Powershell command history, otherwise this maybe exploit by malware.
-  - Get the PowerShell command history file location:
-    ```powershell
-    > (Get-PSReadlineOption).HistorySavePath
-    ```
-  - Show the content of the PowerShell command history file:
-    ```powershell
-    > cat (Get-PSReadlineOption).HistorySavePath
-    ```
-  - Clear the command history in PowerShell by delete the file:
-    ```powershell
-    > Remove-Item (Get-PSReadlineOption).HistorySavePath
-    ```
-  - Change how the PowerShell command history is saved:
-    ```powershell
-    > Set-PSReadlineOption -HistorySaveStyle SaveIncrementally # Default
-    > Set-PSReadlineOption -HistorySaveStyle SaveAtExit
-    > Set-PSReadlineOption -HistorySaveStyle SaveNothing
-    ```
+- `______ lock {password}` and `______ unlock {password}` are support multiple locks, please reverse locks order when unlock.
+- When using `______ lock {password}` and `______ unlock {password}` in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📄 Documentation
 

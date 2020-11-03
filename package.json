@@ -25,7 +25,7 @@
 	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^4.0.0",
-		"@octokit/rest": "^18.0.8",
+		"@octokit/rest": "^18.0.9",
 		"chalk": "^4.1.0",
 		"cliui": "^7.0.3",
 		"tweetsodium": "^0.0.5"

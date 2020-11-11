@@ -83,8 +83,8 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### ⚠ Important
 
-- `______ lock {password}` and `______ unlock {password}` are support multiple locks, please reverse locks order when unlock.
-- When using `______ lock {password}` and `______ unlock {password}` in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
+- `______ lock {key}` and `______ unlock {key}` are support multiple locks, please reverse locks order when unlock.
+- When using `______ lock {key}` and `______ unlock {key}` in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📄 Documentation
 
@@ -103,10 +103,10 @@ NodeJS (>= v10.13) & NPM (>= v6.4.1):
 ### CLI (Excerpt)
 
 - `account limit`
-- `account lock {password}`
+- `account lock {key}`
 - `account signin {token}`
 - `account signout`
-- `account unlock {password}`
+- `account unlock {key}`
 - `account whoami`
 - `label add {target} {name} {color} [description]`
 - `label delete {target} ...{name}`
@@ -117,14 +117,14 @@ NodeJS (>= v10.13) & NPM (>= v6.4.1):
 - `label pushmerge {source} ...{target}`
 - `label replace {source} ...{target}`
 - `label reset ...{target}`
-- `localstorage lock {password}`
-- `localstorage unlock {password}`
+- `localstorage lock {key}`
+- `localstorage unlock {key}`
 - `secret add {target} {name} {value}`
 - `secret delete {target} ...{name}`
 - `secret deleteall ...{target}`
 - `secret deletecross {name} ...{target}`
 - `secret list {target}`
-- `secret lock {password}`
+- `secret lock {key}`
 - `secret pushmerge ...{target}`
 - `secret replace ...{target}`
-- `secret unlock {password}`
+- `secret unlock {key}`

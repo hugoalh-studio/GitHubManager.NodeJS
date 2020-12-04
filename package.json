@@ -28,8 +28,8 @@
 		"@hugoalh/cli-argument-parser": "^0.1.0",
 		"@hugoalh/github-sodium": "^1.0.0",
 		"@hugoalh/symmetric-crypto": "^1.0.1",
-		"@octokit/graphql": "^4.5.7",
-		"@octokit/rest": "^18.0.9",
+		"@octokit/graphql": "^4.5.8",
+		"@octokit/rest": "^18.0.11",
 		"chalk": "^4.1.0",
 		"cliui": "^7.0.4",
 		"enquirer": "^2.3.6"

@@ -92,7 +92,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### Getting Started (Excerpt)
 
-NodeJS (>= v10.13) & NPM (>= v6.4.1):
+NodeJS (>= v14.15) & NPM (>= v6.14.8):
 
 ```powershell
 # Use either one

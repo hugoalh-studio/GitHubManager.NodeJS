@@ -2,7 +2,7 @@
 /*==================
 [NodeJS] GitHub Manager
 	Language:
-		NodeJS/10.13.0
+		NodeJS/14.15.0
 ==================*/
 const chalk = require("chalk"),
 	cliArgumentParser = require("@hugoalh/cli-argument-parser");

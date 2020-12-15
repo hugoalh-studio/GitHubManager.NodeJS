@@ -13,32 +13,30 @@ ${input.unparseable.join("\n")}
 ([NodeJS] GitHub Manager)`);
 	process.exit(0);
 };
-let method = input.line[0] || "help";
+let method = input.line[0] || "";
 switch (method.toLowerCase()) {
-	/*
 	case "":
-		require("../lib/wizard.js")(input);
+		require("../lib/wizard.js")();
 		break;
-	*/
 	case "account":
 	case "acc":
-		require("../lib/account.js")(input);
+		require("../lib/method/account.js")(input);
 		break;
 	case "help":
 	case "h":
-		require("../lib/help.js")(input);
+		require("../lib/method/help.js")(input);
 		break;
 	case "label":
-		require("../lib/label.js")(input);
+		require("../lib/method/label.js")(input);
 		break;
 	case "localstorage":
 	case "local":
 	case "ls":
 	case "storage":
-		require("../lib/localstorage/service.js")(input);
+		require("../lib/method/localstorage/service.js.js")(input);
 		break;
 	case "secret":
-		require("../lib/secret.js")(input);
+		require("../lib/method/secret.js")(input);
 		break;
 	default:
 		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! Use \`help\` to view the command list. ([NodeJS] GitHub Manager)`);

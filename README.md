@@ -94,7 +94,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 NodeJS (>= v14.15) & NPM (>= v6.14.8):
 
-```powershell
+```sh
 > npm install --global @hugoalh/github-manager
 ```
 

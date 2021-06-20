@@ -83,13 +83,13 @@ A NodeJS CLI to provide a better way to manage GitHub.
 | List | Key only | ✔ | Key only |
 | Pull Merge |  |  |  |
 | Pull Replace |  |  |  |
-| Push Merge | Import only | Export only | Import only |
-| Push Replace | Import only | Export only | Import only |
+| Push Merge |  |  |  |
+| Push Replace |  |  |  |
 
 ### ⚠ Important
 
-- `______ lock {passpharse}` and `______ unlock {passpharse}` are support multiple locks, please reverse locks order when unlock.
-- When using `______ lock {passpharse}` and `______ unlock {passpharse}` in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
+- Additional lock is support multiple locks, please reverse locks order when unlock.
+- When using in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📄 Documentation
 
@@ -107,28 +107,22 @@ NodeJS (>= v14.15.0) & NPM (>= v6.14.8):
 
 - `account limit`
 - `account lock {passpharse}`
-- `account signin {token}`
-- `account signout`
+- `account sign-in {token}`
+- `account sign-out`
 - `account unlock {passpharse}`
-- `account whoami`
-- `label add {target} {name} {color} [description]`
-- `label delete {target} ...{name}`
-- `label delete-all ...{target}`
-- `label delete-cross {name} ...{target}`
-- `label list {target}`
-- `label pull-merge {target} ...{source}`
-- `label pull-replace {target} ...{source}`
-- `label push-merge {source} ...{target}`
-- `label push-replace {source} ...{target}`
-- `label reset ...{target}`
-- `local-storage lock {passpharse}`
-- `local-storage unlock {passpharse}`
-- `secret add {target} {name} {value}`
-- `secret delete {target} ...{name}`
-- `secret delete-all ...{target}`
-- `secret delete-cross {name} ...{target}`
-- `secret list {target}`
-- `secret lock {passpharse}`
-- `secret push-merge ...{target}`
-- `secret push-replace ...{target}`
-- `secret unlock {passpharse}`
+- `account who-am-i`
+- `label {target} add {name} {color} [description]`
+- `label {target} delete ...{name}`
+- `label {target} delete-all`
+- `label {name} delete-cross ...{target}`
+- `label {target} list`
+- `label {target} pull-merge ...{source}`
+- `label {target} pull-replace ...{source}`
+- `label {source} push-merge ...{target}`
+- `label {source} push-replace ...{target}`
+- `label {target} reset`
+- `secret {target} add {name} {value}`
+- `secret {target} delete ...{name}`
+- `secret {target} delete-all`
+- `secret {name} delete-cross ...{target}`
+- `secret {target} list`

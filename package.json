@@ -24,7 +24,7 @@
 		"url": "git+https://github.com/hugoalh-studio/NodeJS.GitHubManager.git"
 	},
 	"dependencies": {
-		"@hugoalh/advanced-determine": "^4.2.0",
+		"@hugoalh/advanced-determine": "^5.0.0",
 		"@hugoalh/cli-argument-parser": "^0.1.0",
 		"@hugoalh/github-sodium": "^1.0.0",
 		"@hugoalh/symmetric-crypto": "^1.0.1",

@@ -1,12 +1,4 @@
-# ==================
-# hugoalh's Repository Resource - GitHub Dependabot
-#   Language:
-#     YAML
-#   Last Update:
-#     2020-10-19
-#   Schema:
-#     https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
-# ==================
+# $<Schema>$ https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
 version: 2
 updates:
   - package-ecosystem: "github-actions"
@@ -16,8 +8,8 @@ updates:
       time: "00:00"
       timezone: "Etc/UTC"
     labels:
-      - "dependency📦"
-      - "unconfirm📋"
+      - "📦dependency"
+      - "🔵unconfirm"
     open-pull-requests-limit: 100
     pull-request-branch-name:
       separator: "/"
@@ -29,8 +21,8 @@ updates:
       time: "00:00"
       timezone: "Etc/UTC"
     labels:
-      - "dependency📦"
-      - "unconfirm📋"
+      - "📦dependency"
+      - "🔵unconfirm"
     open-pull-requests-limit: 100
     pull-request-branch-name:
       separator: "/"

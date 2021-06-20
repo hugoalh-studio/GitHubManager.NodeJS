@@ -1,9 +1,7 @@
 ---
 name: "文檔問題"
 about: "報告一個文檔問題。"
-title: ""
-labels: "documentation📚,unconfirm📋"
-assignees: ""
+labels: "📚documentation,🔵unconfirm"
 ---
 > ### 建議內容列表
 >

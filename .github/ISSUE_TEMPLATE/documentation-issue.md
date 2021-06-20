@@ -1,9 +1,7 @@
 ---
 name: "Documentation Issue"
 about: "Report a documentation issue."
-title: ""
-labels: "documentation📚,unconfirm📋"
-assignees: ""
+labels: "📚documentation,🔵unconfirm"
 ---
 > ### Suggested Content List
 >

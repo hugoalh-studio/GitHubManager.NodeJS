@@ -1,16 +1,9 @@
 #!/usr/bin/env node
-/*==================
-[NodeJS] GitHub Manager
-	Language:
-		NodeJS/14.15.0
-==================*/
-const chalk = require("chalk"),
-	cliArgumentParser = require("@hugoalh/cli-argument-parser");
+const cliArgumentParser = require("@hugoalh/cli-argument-parser"),
+	internalConsole = require("../lib/internal/console.js");
 let input = cliArgumentParser.parse(process.argv.slice(2));
 if (input.unparseable.length > 0) {
-	console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown input:
-${input.unparseable.join("\n")}
-([NodeJS] GitHub Manager)`);
+	internalConsole.error(`Unknown input: ${input.unparseable.join("\n")}`);
 	process.exit(0);
 };
 let method = input.line[0] || "";
@@ -39,6 +32,6 @@ switch (method.toLowerCase()) {
 		require("../lib/method/secret.js")(input);
 		break;
 	default:
-		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! Use \`help\` to view the command list. ([NodeJS] GitHub Manager)`);
-		break;
+		internalConsole.error(`Unknown command! Use \`help\` to view the command list.`);
+		process.exit(0);
 };

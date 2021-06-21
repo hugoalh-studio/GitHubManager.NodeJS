@@ -27,6 +27,9 @@
 		"type": "git",
 		"url": "git+https://github.com/hugoalh-studio/github-manager-nodejscli.git"
 	},
+	"scripts": {
+		"language-test": "node lib/language/test.js"
+	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^5.0.0",
 		"@hugoalh/command-line-parser": "^0.11.0",

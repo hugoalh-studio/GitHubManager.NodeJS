@@ -61,30 +61,153 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### 🌟 Feature
 
-| **Action - Label** | **Repository** | **Local Storage** | **Organization** |
-|:-:|:-:|:-:|:-:|
-| Add | ✔ | ✔ |  |
-| Delete | ✔ | ✔ |  |
-| Delete All | ✔ | ✔ |  |
-| Delete Cross | ✔ | ✔ |  |
-| List | ✔ | ✔ |  |
-| Pull Merge | ✔ | ✔ |  |
-| Pull Replace | ✔ | ✔ |  |
-| Push Merge | ✔ | ✔ |  |
-| Push Replace | ✔ | ✔ |  |
-| Reset | ✔ | ✔ |  |
+#### Label
 
-| **Action - Secret** | **Repository** | **Local Storage** | **Organization** |
-|:-:|:-:|:-:|:-:|
-| Add | ✔ | ✔ | ✔ |
-| Delete | ✔ | ✔ | ✔ |
-| Delete All | ✔ | ✔ | ✔ |
-| Delete Cross | ✔ | ✔ | ✔ |
-| List | Key only | ✔ | Key only |
-| Pull Merge |  |  |  |
-| Pull Replace |  |  |  |
-| Push Merge |  |  |  |
-| Push Replace |  |  |  |
+<table>
+  <tr>
+    <td align="center"><b></b></td>
+    <td align="center"><b>Repository</b></td>
+    <td align="center"><b>Local Storage</b></td>
+    <td align="center"><b>Organization</b></td>
+  </tr>
+  <tr>
+    <td align="center">Add</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Add Cross</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Delete</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Delete All</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Delete Cross</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">List</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Pull Merge</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Pull Replace</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Push Merge</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Push Replace<br /><i>(&lt; v1.1.0: Replace)</i></td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Reset</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
+  </tr>
+</table>
+
+#### Secret
+
+<table>
+  <tr>
+    <td align="center"><b></b></td>
+    <td align="center"><b>Repository</b></td>
+    <td align="center"><b>Local Storage</b></td>
+    <td align="center"><b>Organization</b></td>
+  </tr>
+  <tr>
+    <td align="center">Add</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+  </tr>
+  <tr>
+    <td align="center">Add Cross</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Delete</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+  </tr>
+  <tr>
+    <td align="center">Delete All</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+  </tr>
+  <tr>
+    <td align="center">Delete Cross</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+  </tr>
+  <tr>
+    <td align="center">List</td>
+    <td align="center">Key only</td>
+    <td align="center">✔</td>
+    <td align="center">Key only</td>
+  </tr>
+  <tr>
+    <td align="center">Pull Merge</td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Pull Replace</td>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Push Merge</td>
+    <td align="center">Import only</td>
+    <td align="center">Export only</td>
+    <td align="center">Import only</td>
+  </tr>
+  <tr>
+    <td align="center">Push Replace<br /><i>(&lt; v1.1.0: Replace)</i></td>
+    <td align="center">Import only</td>
+    <td align="center">Export only</td>
+    <td align="center">Import only</td>
+  </tr>
+</table>
 
 ### ⚠ Important
 

@@ -65,7 +65,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 <table>
   <tr>
-    <td align="center"><b></b></td>
+    <td align="center"><b>Action</b></td>
     <td align="center"><b>Repository</b></td>
     <td align="center"><b>Local Storage</b></td>
     <td align="center"><b>Organization</b></td>
@@ -74,61 +74,70 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td align="center">Add</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
-    <td align="center">Add Cross</td>
-    <td align="center">&gt;= v1.1.0</td>
-    <td align="center">&gt;= v1.1.0</td>
-    <td align="center"></td>
+    <td align="center">Add Across</td>
+    <td><ul>
+      <li>&gt;= v1.1.0</li>
+      <li>Wizard mode only</li>
+    </ul></td>
+    <td><ul>
+      <li>&gt;= v1.1.0</li>
+      <li>Wizard mode only</li>
+    </ul></td>
+    <td><ul>
+      <li>&gt;= v1.1.0</li>
+      <li>Wizard mode only</li>
+    </ul></td>
   </tr>
   <tr>
     <td align="center">Delete</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
+  </tr>
+  <tr>
+    <td align="center">Delete Across<br /><i>(&lt; v1.1.0: Delete Cross)</i></td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Delete All</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
-  </tr>
-  <tr>
-    <td align="center">Delete Cross</td>
-    <td align="center">✔</td>
-    <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">List</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Pull Merge</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Pull Replace</td>
-    <td align="center">✔</td>
-    <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Push Merge</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Push Replace<br /><i>(&lt; v1.1.0: Replace)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Reset</td>
@@ -142,7 +151,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 <table>
   <tr>
-    <td align="center"><b></b></td>
+    <td align="center"><b>Action</b></td>
     <td align="center"><b>Repository</b></td>
     <td align="center"><b>Local Storage</b></td>
     <td align="center"><b>Organization</b></td>
@@ -154,10 +163,10 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td align="center">✔</td>
   </tr>
   <tr>
-    <td align="center">Add Cross</td>
+    <td align="center">Add Across</td>
     <td align="center">&gt;= v1.1.0</td>
     <td align="center">&gt;= v1.1.0</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Delete</td>
@@ -166,13 +175,13 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td align="center">✔</td>
   </tr>
   <tr>
-    <td align="center">Delete All</td>
+    <td align="center">Delete Across</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
   </tr>
   <tr>
-    <td align="center">Delete Cross</td>
+    <td align="center">Delete All</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
@@ -211,12 +220,12 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### ⚠ Important
 
-- Additional lock is support multiple locks, please reverse locks order when unlock.
+- Local storage lock is support multiple locks, please reverse locks order when unlock.
 - When using in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📄 Documentation
 
-*For the official documentation, please visit [GitHub Repository Wiki](https://github.com/hugoalh-studio/github-manager-nodejscli/wiki)*.
+*For the official documentation, please visit [GitHub Repository Wiki](https://github.com/hugoalh-studio/github-manager-nodejscli/wiki).*
 
 ### Getting Started (Excerpt)
 
@@ -228,24 +237,26 @@ NodeJS (>= v14.15.0) & NPM (>= v6.14.8):
 
 ### CLI (Excerpt)
 
-- `account limit`
-- `account lock {passpharse}`
+- `account rate-limit`
 - `account sign-in {token}`
 - `account sign-out`
-- `account unlock {passpharse}`
 - `account who-am-i`
-- `label {target} add {name} {color} [description]`
-- `label {target} delete ...{name}`
-- `label {target} delete-all`
-- `label {name} delete-cross ...{target}`
-- `label {target} list`
-- `label {target} pull-merge ...{source}`
-- `label {target} pull-replace ...{source}`
-- `label {source} push-merge ...{target}`
-- `label {source} push-replace ...{target}`
-- `label {target} reset`
-- `secret {target} add {name} {value}`
-- `secret {target} delete ...{name}`
-- `secret {target} delete-all`
-- `secret {name} delete-cross ...{target}`
-- `secret {target} list`
+- `label add {target} {name} {color} [description]`
+- `label delete {target} ...{name}`
+- `label delete-all ...{target}`
+- `label delete-across {name} ...{target}`
+- `label list {target}`
+- `label pull-merge {target} ...{source}`
+- `label pull-replace {target} ...{source}`
+- `label push-merge {source} ...{target}`
+- `label push-replace {source} ...{target}`
+- `label reset ...{target}`
+- `local-storage lock {passpharse}`
+- `local-storage unlock {passpharse}`
+- `secret add {target} {name} {value}`
+- `secret delete {target} ...{name}`
+- `secret delete-across {name} ...{target}`
+- `secret delete-all ...{target}`
+- `secret list {target}`
+- `secret push-merge ...{target}`
+- `secret push-replace ...{target}`

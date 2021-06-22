@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/github-manager",
-	"version": "1.1.0",
+	"version": "1.1.0-beta.1",
 	"description": "A CLI to provide a better way to manage GitHub.",
 	"keywords": [
 		"cli",
@@ -28,7 +28,7 @@
 		"url": "git+https://github.com/hugoalh-studio/github-manager-nodejscli.git"
 	},
 	"scripts": {
-		"language-test": "node lib/language/test.js"
+		"debugL": "node lib/language/debug.js"
 	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^5.0.0",

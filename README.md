@@ -19,7 +19,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td>MIT</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/releases"><b>Release</b></a> <img align="center" src="https://img.shields.io/github/downloads/hugoalh-studio/github-manager-nodejscli/total?label=%20&style=flat-square" /></td>
+    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/releases"><b>Release (GitHub)</b></a> <img align="center" src="https://img.shields.io/github/downloads/hugoalh-studio/github-manager-nodejscli/total?label=%20&style=flat-square" /></td>
     <td>
       <b>Latest:</b> <img align="center" src="https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?sort=semver&label=%20&style=flat-square" /> (<img align="center" src="https://img.shields.io/github/release-date/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" />)<br />
       <b>Pre:</b> <img align="center" src="https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?include_prereleases&sort=semver&label=%20&style=flat-square" /> (<img align="center" src="https://img.shields.io/github/release-date-pre/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" />)
@@ -78,18 +78,9 @@ A NodeJS CLI to provide a better way to manage GitHub.
   </tr>
   <tr>
     <td align="center">Add Across</td>
-    <td><ul>
-      <li>&gt;= v1.1.0</li>
-      <li>Wizard mode only</li>
-    </ul></td>
-    <td><ul>
-      <li>&gt;= v1.1.0</li>
-      <li>Wizard mode only</li>
-    </ul></td>
-    <td><ul>
-      <li>&gt;= v1.1.0</li>
-      <li>Wizard mode only</li>
-    </ul></td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
     <td align="center">Delete</td>
@@ -143,7 +134,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td align="center">Reset</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center"></td>
+    <td align="center">&gt;= v1.1.0</td>
   </tr>
 </table>
 
@@ -175,7 +166,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
     <td align="center">✔</td>
   </tr>
   <tr>
-    <td align="center">Delete Across</td>
+    <td align="center">Delete Across<br /><i>(&lt; v1.1.0: Delete Cross)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
@@ -220,7 +211,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 
 ### ⚠ Important
 
-- Local storage lock is support multiple locks, please reverse locks order when unlock.
+- Local storage lock supports multiple locks, please reverse lock's order when unlock.
 - When using in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📄 Documentation
@@ -242,9 +233,10 @@ NodeJS (>= v14.15.0) & NPM (>= v6.14.8):
 - `account sign-out`
 - `account who-am-i`
 - `label add {target} {name} {color} [description]`
+- `label add-across {name} {color} [--description=] ...{target}`
 - `label delete {target} ...{name}`
-- `label delete-all ...{target}`
 - `label delete-across {name} ...{target}`
+- `label delete-all ...{target}`
 - `label list {target}`
 - `label pull-merge {target} ...{source}`
 - `label pull-replace {target} ...{source}`
@@ -254,6 +246,7 @@ NodeJS (>= v14.15.0) & NPM (>= v6.14.8):
 - `local-storage lock {passpharse}`
 - `local-storage unlock {passpharse}`
 - `secret add {target} {name} {value}`
+- `secret add-across {name} {value} ...{target}`
 - `secret delete {target} ...{name}`
 - `secret delete-across {name} ...{target}`
 - `secret delete-all ...{target}`

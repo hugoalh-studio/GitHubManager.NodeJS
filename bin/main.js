@@ -2,17 +2,20 @@
 const commandLineParser = require("@hugoalh/command-line-parser"),
 	header = require("../lib/internal/header.js"),
 	internalConsole = require("../lib/internal/console.js"),
+	internalFlag = require("../lib/internal/flag.js"),
 	languageService = require("../lib/language/main.js");
-console.log(header);
-let input = commandLineParser(process.argv.slice(2));
-if (input.fault.length > 0) {
-	input.fault.forEach((element) => {
-		internalConsole.error(`${languageService.errorUnknownInput_1}${element}${languageService.errorUnknownInput_2}`);
-	});
-	process.exit(0);
+let commandLine = commandLineParser(process.argv.slice(2));
+if (commandLine.flag.includes("silent") === false) {
+	console.log(header);
 };
-if (input.action.length > 0) {
-	require("../lib/direct/main.js")(input);
+if (commandLine.fault.length > 0) {
+	commandLine.fault.forEach((element) => {
+		internalConsole.warning(`${languageService.warningUnknownInput_1}${element}${languageService.warningUnknownInput_2}`);
+	});
+};
+if (commandLine.action.length > 0) {
+	require("../lib/direct/main.js")(commandLine);
 } else {
-	require("../lib/wizard/main.js")();
+	commandLine.flag.push(`${internalFlag.wizard}`);
+	require("../lib/wizard/main.js")(commandLine);
 };

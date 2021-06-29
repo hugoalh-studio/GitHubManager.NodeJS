@@ -21,7 +21,7 @@
 
 ### Contact
 
-Send an email to anyone who listed in here (click the link to obtain the email address).
+Send an email to anyone who listed in here (click the link to obtain the email address):
 
 - [hugoalh](https://github.com/hugoalh)
 

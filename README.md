@@ -1,63 +1,25 @@
 # GitHub Manager (NodeJS CLI Edition)
 
-<details>
-  <summary><a href="https://github.com/hugoalh-studio/github-manager-nodejscli"><code>GitHubManager.NodeJSCLI</code></a></summary>
-  <img align="center" alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Top Langauge" src="https://img.shields.io/github/languages/top/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Code Size" src="https://img.shields.io/github/languages/code-size/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Watcher" src="https://img.shields.io/github/watchers/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Star" src="https://img.shields.io/github/stars/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-  <img align="center" alt="GitHub Fork" src="https://img.shields.io/github/forks/hugoalh-studio/github-manager-nodejscli?logo=github&logoColor=ffffff&style=flat-square" />
-</details>
+[`GitHubManager.NodeJSCLI`](https://github.com/hugoalh-studio/github-manager-nodejscli) - A NodeJS CLI to provide a better way to manage GitHub.
 
-A NodeJS CLI to provide a better way to manage GitHub.
+[![GitHub Contributors](https://img.shields.io/github/contributors/hugoalh-studio/github-manager-nodejscli?label=Contributors&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/graphs/contributors)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/hugoalh-studio/github-manager-nodejscli?label=Issues&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/hugoalh-studio/github-manager-nodejscli?label=Pull%20Requests&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/pulls)
+[![GitHub Discussions](https://img.shields.io/github/discussions/hugoalh-studio/github-manager-nodejscli?label=Discussions&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/discussions)
+[![GitHub Stars](https://img.shields.io/github/stars/hugoalh-studio/github-manager-nodejscli?label=Stars&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/hugoalh-studio/github-manager-nodejscli?label=Forks&logo=github&logoColor=ffffff&style=flat-square)](https://github.com/hugoalh-studio/github-manager-nodejscli/network/members)
+![GitHub Languages](https://img.shields.io/github/languages/count/hugoalh-studio/github-manager-nodejscli?label=Languages&logo=github&logoColor=ffffff&style=flat-square)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/hugoalh-studio/github-manager-nodejscli?label=Grade&logo=codefactor&logoColor=ffffff&style=flat-square)](https://www.codefactor.io/repository/github/hugoalh-studio/github-manager-nodejscli)
+[![LGTM Alerts](https://img.shields.io/lgtm/alerts/g/hugoalh-studio/github-manager-nodejscli?label=Alerts&logo=lgtm&logoColor=ffffff&style=flat-square)
+![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/g/hugoalh-studio/github-manager-nodejscli?label=Grade&logo=lgtm&logoColor=ffffff&style=flat-square)](https://lgtm.com/projects/g/hugoalh-studio/github-manager-nodejscli)
+[![License](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen&style=flat-square)](./LICENSE.md)
 
-<table>
-  <tr>
-    <td><a href="./LICENSE.md"><b>License</b></a></td>
-    <td>MIT</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/releases"><b>Release (GitHub)</b></a> <img align="center" src="https://img.shields.io/github/downloads/hugoalh-studio/github-manager-nodejscli/total?label=%20&style=flat-square" /></td>
-    <td>
-      <b>Latest:</b> <img align="center" src="https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?sort=semver&label=%20&style=flat-square" /> (<img align="center" src="https://img.shields.io/github/release-date/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" />)<br />
-      <b>Pre:</b> <img align="center" src="https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?include_prereleases&sort=semver&label=%20&style=flat-square" /> (<img align="center" src="https://img.shields.io/github/release-date-pre/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" />)
-    </td>
-  </tr>
-  <tr>
-    <td><a href="https://www.npmjs.com/package/@hugoalh/github-manager"><b>Release (NPM)</b></a> <img align="center" src="https://img.shields.io/npm/dt/@hugoalh/github-manager?label=%20&style=flat-square" /></td>
-    <td>
-      <b>Latest:</b> <img align="center" src="https://img.shields.io/npm/v/@hugoalh/github-manager/latest?label=%20&style=flat-square" /><br />
-      <b>Pre:</b> <img align="center" src="https://img.shields.io/npm/v/@hugoalh/github-manager/pre?label=%20&style=flat-square" />
-    </td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/graphs/contributors"><b>Contributor</b></a> <img align="center" src="https://img.shields.io/github/contributors/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" /></td>
-    <td><ul>
-        <li><a href="https://github.com/hugoalh-studio">hugoalh Studio</a></li>
-        <li><a href="https://github.com/hugoalh">hugoalh</a></li>
-    </ul></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/issues?q=is%3Aissue"><b>Issue</b></a></td>
-    <td><img align="center" src="https://img.shields.io/github/issues-raw/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" /> : <img align="center" src="https://img.shields.io/github/issues-closed-raw/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" /></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/hugoalh-studio/github-manager-nodejscli/pulls?q=is%3Apr"><b>Pull Request</b></a></td>
-    <td><img align="center" src="https://img.shields.io/github/issues-pr-raw/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" /> : <img align="center" src="https://img.shields.io/github/issues-pr-closed-raw/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square" /></td>
-  </tr>
-  <tr>
-    <td><b>Code Quality</b></td>
-    <td>
-      <a href="https://www.codefactor.io/repository/github/hugoalh-studio/github-manager-nodejscli"><img align="center" alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/hugoalh-studio/github-manager-nodejscli?logo=codefactor&logoColor=ffffff&style=flat-square" /></a>
-      <a href="https://lgtm.com/projects/g/hugoalh-studio/github-manager-nodejscli/alerts"><img align="center" alt="LGTM Alert" src="https://img.shields.io/lgtm/alerts/g/hugoalh-studio/github-manager-nodejscli?label=%20&logo=lgtm&logoColor=ffffff&style=flat-square" /></a>
-      <a href="https://lgtm.com/projects/g/hugoalh-studio/github-manager-nodejscli/context:javascript"><img align="center" alt="LGTM Grade" src="https://img.shields.io/lgtm/grade/javascript/g/hugoalh-studio/github-manager-nodejscli?logo=lgtm&logoColor=ffffff&style=flat-square" /></a>
-    </td>
-  </tr>
-</table>
+| **Release** | **Latest** | **Pre** |
+|:-:|:-:|:-:|
+| [**GitHub**](https://github.com/hugoalh-studio/github-manager-nodejscli/releases) ![GitHub Total Downloads](https://img.shields.io/github/downloads/hugoalh-studio/github-manager-nodejscli/total?label=%20&style=flat-square) | ![GitHub Latest Release Version](https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?sort=semver&label=%20&style=flat-square) (![GitHub Latest Release Date](https://img.shields.io/github/release-date/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square)) | ![GitHub Latest Pre-Release Version](https://img.shields.io/github/release/hugoalh-studio/github-manager-nodejscli?include_prereleases&sort=semver&label=%20&style=flat-square) (![GitHub Latest Pre-Release Date](https://img.shields.io/github/release-date-pre/hugoalh-studio/github-manager-nodejscli?label=%20&style=flat-square)) |
+| [**NPM**](https://www.npmjs.com/package/@hugoalh/github-manager) ![NPM Total Downloads](https://img.shields.io/npm/dt/@hugoalh/github-manager?label=%20&style=flat-square) | ![NPM Latest Release Version](https://img.shields.io/npm/v/@hugoalh/github-manager/latest?label=%20&style=flat-square) | ![NPM Latest Pre-Release Version](https://img.shields.io/npm/v/@hugoalh/github-manager/pre?label=%20&style=flat-square) |
 
-## 📜 Description
+## 📝 Description
 
 ### 🌟 Feature
 
@@ -214,7 +176,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 - Local storage lock supports multiple locks, please reverse lock's order when unlock.
 - When using in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
-## 📄 Documentation
+## 📚 Documentation
 
 *For the official documentation, please visit [GitHub Repository Wiki](https://github.com/hugoalh-studio/github-manager-nodejscli/wiki).*
 
@@ -223,7 +185,7 @@ A NodeJS CLI to provide a better way to manage GitHub.
 NodeJS (>= v14.15.0) & NPM (>= v6.14.8):
 
 ```sh
-> npm install --global @hugoalh/github-manager
+npm install --global @hugoalh/github-manager
 ```
 
 ### CLI (Excerpt)

@@ -30,75 +30,77 @@
     <td align="center"><b>Action</b></td>
     <td align="center"><b>Repository</b></td>
     <td align="center"><b>Local Storage</b></td>
-    <td align="center"><b>Organization</b></td>
-  </tr>
-  <tr>
-    <td align="center">Add</td>
-    <td align="center">✔</td>
-    <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"><b>Organization</b> *</td>
   </tr>
   <tr>
     <td align="center">Add Across</td>
     <td align="center">&gt;= v1.1.0</td>
     <td align="center">&gt;= v1.1.0</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
-    <td align="center">Delete</td>
+    <td align="center">Add One<br /><i>(&lt; v1.1.0: Add)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Delete Across<br /><i>(&lt; v1.1.0: Delete Cross)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Delete All</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center">Delete One<br /><i>(&lt; v1.1.0: Delete)</i></td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">List</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Pull Merge</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Pull Replace</td>
     <td align="center">&gt;= v1.1.0</td>
     <td align="center">&gt;= v1.1.0</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Push Merge</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Push Replace<br /><i>(&lt; v1.1.0: Replace)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
   <tr>
     <td align="center">Reset</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
-    <td align="center">&gt;= v1.1.0</td>
+    <td align="center"></td>
   </tr>
 </table>
+
+\* GitHub API does not support organization label.
 
 #### Secret
 
@@ -110,19 +112,13 @@
     <td align="center"><b>Organization</b></td>
   </tr>
   <tr>
-    <td align="center">Add</td>
-    <td align="center">✔</td>
-    <td align="center">✔</td>
-    <td align="center">✔</td>
-  </tr>
-  <tr>
     <td align="center">Add Across</td>
     <td align="center">&gt;= v1.1.0</td>
     <td align="center">&gt;= v1.1.0</td>
     <td align="center">&gt;= v1.1.0</td>
   </tr>
   <tr>
-    <td align="center">Delete</td>
+    <td align="center">Add One<br /><i>(&lt; v1.1.0: Add)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
@@ -135,6 +131,12 @@
   </tr>
   <tr>
     <td align="center">Delete All</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+    <td align="center">✔</td>
+  </tr>
+  <tr>
+    <td align="center">Delete One<br /><i>(&lt; v1.1.0: Delete)</i></td>
     <td align="center">✔</td>
     <td align="center">✔</td>
     <td align="center">✔</td>
@@ -173,7 +175,7 @@
 
 ### ⚠ Important
 
-- Local storage lock supports multiple locks, please reverse lock's order when unlock.
+- Local storage encryption supports multiple encrypts, please reverse encrypts' order when decryption.
 - When using in any shell which has incrementally command history, please make sure to clear the command history afterward or otherwise this maybe exploit by malware.
 
 ## 📚 Documentation
@@ -194,24 +196,24 @@ npm install --global @hugoalh/github-manager
 - `account sign-in {token}`
 - `account sign-out`
 - `account who-am-i`
-- `label add {target} {name} {color} [description]`
-- `label add-across {name} {color} [--description=] ...{target}`
-- `label delete {target} ...{name}`
+- `label add-across {name} {color} [--description] ...{target}`
+- `label add-one {target} {name} {color} [description]`
 - `label delete-across {name} ...{target}`
 - `label delete-all ...{target}`
+- `label delete-one {target} ...{name}`
 - `label list {target}`
 - `label pull-merge {target} ...{source}`
 - `label pull-replace {target} ...{source}`
 - `label push-merge {source} ...{target}`
 - `label push-replace {source} ...{target}`
 - `label reset ...{target}`
-- `local-storage lock {passpharse}`
-- `local-storage unlock {passpharse}`
-- `secret add {target} {name} {value}`
+- `local-storage decrypt {passpharse}`
+- `local-storage encrypt {passpharse}`
 - `secret add-across {name} {value} ...{target}`
-- `secret delete {target} ...{name}`
+- `secret add-one {target} {name} {value}`
 - `secret delete-across {name} ...{target}`
 - `secret delete-all ...{target}`
+- `secret delete-one {target} ...{name}`
 - `secret list {target}`
 - `secret push-merge ...{target}`
 - `secret push-replace ...{target}`

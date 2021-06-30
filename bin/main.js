@@ -15,9 +15,9 @@ if (commandLine.fault.length > 0) {
 	});
 };
 commandLine.flag.push(`command_${sessionCode}`);
-if (commandLine.action.length > 0) {
-	require("../lib/direct/main.js")(commandLine);
-} else {
+if (commandLine.action.length === 0 && commandLine.fault.length === 0 && commandLine.flag.length === 1 && Object.keys(commandLine.option).length === 0) {
 	commandLine.flag.push(`${internalFlag.wizard}`);
 	require("../lib/wizard/main.js")(commandLine);
+} else {
+	require("../lib/direct/main.js")(commandLine);
 };

@@ -1,36 +1,44 @@
 {
 	"name": "@hugoalh/github-manager",
-	"version": "1.1.0",
+	"version": "1.1.0-beta.1",
 	"description": "A CLI to provide a better way to manage GitHub.",
 	"keywords": [
-		"nodejs",
+		"cli",
+		"command-line-interface",
 		"github",
 		"label",
 		"manage",
 		"manager",
 		"secret"
 	],
-	"homepage": "https://github.com/hugoalh-studio/NodeJS.GitHubManager#readme",
+	"homepage": "https://github.com/hugoalh-studio/github-manager-nodejscli#readme",
 	"bugs": {
-		"url": "https://github.com/hugoalh-studio/NodeJS.GitHubManager/issues"
+		"url": "https://github.com/hugoalh-studio/github-manager-nodejscli/issues"
 	},
 	"license": "MIT",
 	"author": "hugoalh",
 	"bin": {
+		"gh-manager": "bin/main.js",
+		"ghm": "bin/main.js",
+		"ghmanager": "bin/main.js",
 		"github-manager": "bin/main.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/hugoalh-studio/NodeJS.GitHubManager.git"
+		"url": "git+https://github.com/hugoalh-studio/github-manager-nodejscli.git"
+	},
+	"scripts": {
+		"debugL": "node lib/language/debug.js"
 	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^5.0.1",
-		"@hugoalh/cli-argument-parser": "^0.1.0",
-		"@hugoalh/github-sodium": "^1.0.0",
-		"@hugoalh/symmetric-crypto": "^1.0.1",
-		"@octokit/graphql": "^4.5.8",
-		"@octokit/rest": "^18.0.12",
-		"chalk": "^4.1.0",
+		"@hugoalh/advanced-random": "^1.3.0",
+		"@hugoalh/command-line-parser": "^0.11.0",
+		"@hugoalh/github-sodium": "^1.1.1",
+		"@hugoalh/symmetric-crypto": "^1.1.2",
+		"@octokit/graphql": "^4.6.4",
+		"@octokit/rest": "^18.6.4",
+		"chalk": "^4.1.1",
 		"cliui": "^7.0.4",
 		"enquirer": "^2.3.6"
 	},

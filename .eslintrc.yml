@@ -1,12 +1,4 @@
-# ==================
-# hugoalh's Repository Resource - ESLint Configuration
-#   Language:
-#     YAML
-#   Last Update:
-#     2020-10-27
-#   Schema:
-#     https://eslint.org/docs/user-guide/configuring
-# ==================
+# $<Schema>$ https://eslint.org/docs/user-guide/configuring
 env:
   amd: false
   applescript: false
@@ -17,6 +9,7 @@ env:
   es6: true
   es2017: true
   es2020: true
+  es2021: true
   greasemonkey: false
   jasmine: false
   jest: false
@@ -39,7 +32,7 @@ parserOptions:
   ecmaFeatures:
     impliedStrict: true
     jsx: false
-  ecmaVersion: 2020
+  ecmaVersion: 2021
   sourceType: "module"
 rules:
   accessor-pairs: "warn"

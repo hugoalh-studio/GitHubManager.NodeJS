@@ -1,44 +1,19 @@
 #!/usr/bin/env node
-/*==================
-[NodeJS] GitHub Manager
-	Language:
-		NodeJS/14.15.0
-==================*/
-const chalk = require("chalk"),
-	cliArgumentParser = require("@hugoalh/cli-argument-parser");
-let input = cliArgumentParser.parse(process.argv.slice(2));
-if (input.unparseable.length > 0) {
-	console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown input:
-${input.unparseable.join("\n")}
-([NodeJS] GitHub Manager)`);
-	process.exit(0);
+const commandLineParser = require("@hugoalh/command-line-parser"),
+	ghmConsole = require("../lib/internal/console.js"),
+	ghmFlag = require("../lib/internal/flag.js"),
+	ghmLanguage = require("../lib/language/main.js"),
+	header = require("../lib/internal/header.js");
+let commandLine = commandLineParser(process.argv.slice(2));
+if (commandLine.flag.includes("silent") === false) {
+	console.log(header);
 };
-let method = input.line[0] || "";
-switch (method.toLowerCase()) {
-	case "":
-		require("../lib/wizard.js")();
-		break;
-	case "account":
-	case "acc":
-		require("../lib/method/account.js")(input);
-		break;
-	case "help":
-	case "h":
-		require("../lib/method/help.js")(input);
-		break;
-	case "label":
-		require("../lib/method/label.js")(input);
-		break;
-	case "localstorage":
-	case "local":
-	case "ls":
-	case "storage":
-		require("../lib/method/localstorage/service.js.js")(input);
-		break;
-	case "secret":
-		require("../lib/method/secret.js")(input);
-		break;
-	default:
-		console.error(`${chalk.bgRed.white.bold("ERROR")} Unknown command! Use \`help\` to view the command list. ([NodeJS] GitHub Manager)`);
-		break;
+commandLine.fault.forEach((element) => {
+	ghmConsole.warning(ghmLanguage.warningUnknownInput, { input: element });
+});
+if (commandLine.action.length === 0 && commandLine.fault.length === 0 && commandLine.flag.length === 0 && Object.keys(commandLine.option).length === 0) {
+	commandLine.flag.push(ghmFlag.wizard);
+	require("../lib/wizard.js")(commandLine);
+} else {
+	require("../lib/direct.js")(commandLine);
 };

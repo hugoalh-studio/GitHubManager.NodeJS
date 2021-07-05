@@ -1,3 +1,4 @@
+# $<Schema>$ https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: "Code Analysis - GitHub Super Linter"
 on:
   push:

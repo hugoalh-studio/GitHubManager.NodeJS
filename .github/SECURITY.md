@@ -3,7 +3,7 @@
 ## Supported Version
 
 > | **Legend** | **Description** |
-> |:---:|:----|
+> |:-:|:--|
 > | L | **LTS:** This is long term supported. |
 > | ✔ | **Yes:** This is supported. |
 > | 👎 | **Partly:** This is partly supported due to this version(s) is deprecated by a newer version(s). |
@@ -11,24 +11,24 @@
 > | ⚠ | **Issue:** This is not supported due to this version(s) is confirmed contains bug(s) and/or issue(s). |
 
 | **Version** | **Targeted NodeJS Version** | **Support** |
-|:---:|:---:|:---:|
-| v1.1 | v14.15.0 | L |
-| v1.0 | v10.13.0 | 👎 |
-| < v1 | v10.13.0 | ❌ |
-| v0.0 \~ v0.1 | v10.0.0 | ❌ |
+|:-:|:-:|:-:|
+| v1.1.X | v14.15.0 | L |
+| v1.0.X | v10.13.0 | 👎 |
+| < v1.0.0 | v10.13.0 | ❌ |
+| v0.X.X | v10.0.0 | ❌ |
 
 ## Report Vulnerability
 
 ### Contact
 
-Send an email to anyone who listed in here (click the link to obtain the email address).
+Send an email to anyone who listed in here (click the link to obtain the email address):
 
 - [hugoalh](https://github.com/hugoalh)
 
 ### Suggested Content List
 
 - Your GitHub account username (e.g.: `@octocat`)
-- Project index (mostly start with `hugoalh/` or `hugoalh-studio/`)
+- Project identification name
 - Affected version(s) (must be a supported version(s))
 - Affected file(s)
 - Issue(s) to cause this security issue
